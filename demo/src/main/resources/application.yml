@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: dev  #多环境配置
+  datasource:
+     driver-class-name: com.mysql.jdbc.Driver
+     url: jdbc:mysql://localhost:3306/dbgirl
+     username: root
+     password: devtest
+  jpa:
+    hibernate:
+     ddl-auto: create
+    show-sql: true
